@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components/src/pages/home_temp.dart';
+
+import 'package:flutter_components/src/routes/routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Components App',
         debugShowCheckedModeBanner: false,
-        home: HomePageTemp());
+        initialRoute: '/',
+        routes: getRoutes());
   }
 }

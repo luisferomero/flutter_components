@@ -27,33 +27,35 @@ class HomePageTemp extends StatelessWidget {
         ),
         body: Center(
           child: ListView(
-            children: _createmaplist(),
+            children: _createMapList(),
           ),
         ));
   }
 
-  List<Widget> _createList() {
-    List<Widget> list = new List<Widget>();
-    for (var number in items) {
-      final tempWidget = ListTile(
-        title: Text(number),
-      );
-      list..add(tempWidget)..add(Divider());
-    }
-    return list;
-  }
+  // List<Widget> _createList() {
+  //   List<Widget> list = new List<Widget>();
+  //   for (var number in items) {
+  //     final tempWidget = ListTile(
+  //       title: Text(number),
+  //     );
+  //     list..add(tempWidget)..add(Divider());
+  //   }
+  //   return list;
+  // }
 
-  List<Widget> _createmaplist() {
+  List<Widget> _createMapList() {
     return items.map((item) {
       return Column(
         children: <Widget>[
           ListTile(
-            title: Text(item),
-            subtitle: Text("subtitle"),
-            leading: Icon(Icons.account_circle),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {},
-          ),
+              title: Text(item),
+              subtitle: Text("subtitle"),
+              leading: Icon(
+                Icons.account_circle,
+                size: 60.0,
+              ),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              onTap: () {}),
           Divider()
         ],
       );
