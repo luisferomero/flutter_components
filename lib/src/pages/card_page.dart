@@ -58,7 +58,7 @@ class CardPage extends StatelessWidget {
         children: <Widget>[
           FadeInImage(
             image: NetworkImage(
-                'https://upload.wikimedia.org/wikipedia/commons/3/35/Neckertal_20150527-6384.jpg'),
+                'https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg'),
             placeholder: AssetImage('assets/loader.gif'),
             fadeInDuration: Duration(milliseconds: 200),
             height: 300.0,

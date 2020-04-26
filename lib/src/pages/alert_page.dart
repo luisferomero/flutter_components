@@ -39,7 +39,8 @@ class AlertPage extends StatelessWidget {
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                Text('This is the content of the alert dialog...'),
+                Text(
+                    'This is the content of the alert dialog, and its a very good content...'),
                 SizedBox(
                   height: 50.0,
                 ),
